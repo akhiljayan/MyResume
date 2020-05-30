@@ -26,7 +26,7 @@
     width: 892.5px !important;
     min-height: 1263px !important;
     padding-bottom: 30px!important;
-    margin: 1cm auto;
+    /* margin: 1cm auto; */
     background: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     position: relative;
