@@ -1,0 +1,18 @@
+<div class="col-md-12 no-col-padding">
+    <div class="col-md-12 no-col-padding text-title content-heading title-underline">
+        Work Experience
+    </div>
+    <div class="col-md-12" *ngFor="let workExp of workExps; index as i " style="padding-bottom:20px;">
+        <div class="group-line text-white" [ngClass]="{'background-primary': (i+1) < this.workExps.length, 'background-white' : (i+1) >= this.workExps.length}">
+            <div class="group-ball background-white"></div>
+        </div>
+        <div class="col-md-12 no-col-padding" style="margin-left: 20px;">
+            <div class="text-sub-title text-bold text-primary-color designation">{{workExp.designation}} </div>
+            <div class="text-sub-title text-bold company">{{workExp.company}}</div>
+            <div class="text-small text-primary-color text-ittalic">{{workExp.startDate}} - {{workExp.endDate}}</div>
+            <div class="col-md-12 no-col-padding" style="padding-top: 5px;">
+                <bracket-list [listItems]="workExp.tasks" [isTwoRow]="false"></bracket-list>
+            </div>
+        </div>
+    </div>
+</div>

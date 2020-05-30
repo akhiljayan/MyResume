@@ -1,0 +1,46 @@
+.top-header{
+    padding-top: 33px;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 18px;
+}
+
+.top-header .col-md-3{
+    overflow: auto;
+    display: inline-block;
+}
+
+.photo{
+    width:408px!important; 
+    height:408px!important; 
+    max-width:180px!important; 
+    max-height:180px!important;
+    border-color: #d3d3d3;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    background: url("src/assets/photo.jpeg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
+}
+
+.blue-header-content{
+    padding: 13.5px 0 16.5px 0;
+    height: auto;
+    float: right;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header-seperator{
+    width: 202.5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background-color: #FFFFFF;
+    float: left;
+    height: 2px;
+}

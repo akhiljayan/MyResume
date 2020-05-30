@@ -1,0 +1,21 @@
+.skill-block-container{
+    margin-bottom: 13.5px;
+    margin-right: 7.5px;
+    width: auto;
+    float: left;
+}
+
+.skill-block-text{
+    margin-bottom: 6px;
+    border-radius: 4.5px;
+    padding: 1px 10.5px;
+    float: left;
+    position: relative;
+    display: inline-table;
+    min-height: 25px;
+}
+
+.skill{
+    display: table-cell;
+    vertical-align: middle;
+}

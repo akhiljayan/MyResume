@@ -1,0 +1,10 @@
+.left-bar{
+    width: 240px;
+    float: left;
+}
+
+.right-bar{
+    width: 652.5px;
+    padding-right: 25px;
+    float: right;
+}
