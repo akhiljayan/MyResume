@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IContacts } from '../AllDataObjects/AllInterface';
-import { ContactDetails } from '../AllDataObjects/DataFile';
+import { IContacts } from '../../AllDataObjects/AllInterface';
+import { ContactDetails } from '../../AllDataObjects/DataFile';
 
 @Component({
   selector: 'contacts',

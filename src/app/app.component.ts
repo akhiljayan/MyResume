@@ -1,8 +1,5 @@
 
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import * as html2pdf  from 'html2pdf.js';
-
-
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,23 +7,5 @@ import * as html2pdf  from 'html2pdf.js';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('firstPage') pageOne: ElementRef;
-  @ViewChild('secondPage') PageOne: ElementRef;
-  title = 'ResumeBootstrap';
-
-  print(): void {
-    const options ={
-      filename: 'test.pdf',
-      image: {type:'jpeg'},
-      html2canvas:{},
-      jsPDF: {orientation: 'landscape'}
-    };
-
-    const content: Element = document.getElementById('first-page');
-
-    html2pdf()
-      .from(content)
-      .set(options)
-      .save();
-  }
+ 
 }

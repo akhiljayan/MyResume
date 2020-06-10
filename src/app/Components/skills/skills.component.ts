@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ISkills } from '../AllDataObjects/AllInterface';
-import { SkillDetails } from '../AllDataObjects/DataFile';
+import { ISkills } from '../../AllDataObjects/AllInterface';
+import { SkillDetails } from '../../AllDataObjects/DataFile';
 
 @Component({
   selector: 'skills',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WorkExperience, WorkExperienceData } from '../AllDataObjects/DataFile';
+import { WorkExperience, WorkExperienceData } from '../../AllDataObjects/DataFile';
 
 @Component({
   selector: 'work-experience',

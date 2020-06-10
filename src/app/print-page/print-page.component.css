@@ -1,0 +1,42 @@
+.top-watermark{
+    background-image: url("src/assets/TopTriangle.svg");
+    height: 631.5px!important;
+    top: 0!important;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute !important;
+    width: 100%;
+    background-size: cover !important;
+}
+
+.bottom-watermark{
+    background-image: url("src/assets/BottomTriangle.svg");
+    height: 631.5px!important;
+    bottom: 0!important;
+    background-position: 100% 100% !important;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute !important;
+    width: 100%;
+    background-size: cover !important;
+}
+
+.page-container {
+    width: 892.5px !important;
+    min-height: 1263px !important;
+    left: 13cm;
+    background: #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.page-container.page-one{
+    padding-left: 22px;
+}
+
+.page-container.page-two{
+    padding-top: 30px;
+}
+
+

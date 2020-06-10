@@ -2,14 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BracketListComponent } from './bracket-list/bracket-list.component';
-import { TopHeaderComponent } from './top-header/top-header.component';
-import { LeftBarComponent } from './page-one/page-one.component';
-import { ContactsComponent } from './contacts/contacts.component';
-import { SkillsComponent } from './skills/skills.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { PageTwoComponent } from './page-two/page-two.component';
-import { EducationComponent } from './education/education.component';
+import { PrintPageComponent } from './print-page/print-page.component';
+import { ShowPageComponent } from './show-page/show-page.component';
+import { BracketListComponent } from './Components/bracket-list/bracket-list.component';
+import { TopHeaderComponent } from './Components/top-header/top-header.component';
+import { LeftBarComponent } from './Components/page-one/page-one.component';
+import { ContactsComponent } from './Components/contacts/contacts.component';
+import { SkillsComponent } from './Components/skills/skills.component';
+import { WorkExperienceComponent } from './Components/work-experience/work-experience.component';
+import { PageTwoComponent } from './Components/page-two/page-two.component';
+import { EducationComponent } from './Components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { EducationComponent } from './education/education.component';
     SkillsComponent,
     WorkExperienceComponent,
     PageTwoComponent,
-    EducationComponent
+    EducationComponent,
+    PrintPageComponent,
+    ShowPageComponent
   ],
   imports: [
     BrowserModule,
