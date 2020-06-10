@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'bracket-list',
+  selector: '[bracket-list]',
   templateUrl: './bracket-list.component.html',
   styleUrls: ['./bracket-list.component.css']
 })

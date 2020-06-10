@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WorkExperience, WorkExperienceData } from '../../AllDataObjects/DataFile';
 
 @Component({
-  selector: 'work-experience',
+  selector: '[work-experience]',
   templateUrl: './work-experience.component.html',
   styleUrls: ['./work-experience.component.css']
 })

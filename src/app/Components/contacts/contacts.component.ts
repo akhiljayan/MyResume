@@ -3,7 +3,7 @@ import { IContacts } from '../../AllDataObjects/AllInterface';
 import { ContactDetails } from '../../AllDataObjects/DataFile';
 
 @Component({
-  selector: 'contacts',
+  selector: '[contacts]',
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.css']
 })

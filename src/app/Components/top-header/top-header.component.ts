@@ -3,7 +3,7 @@ import { IResumeHeader } from '../../AllDataObjects/AllInterface';
 import { HeaderDetail } from '../../AllDataObjects/DataFile';
 
 @Component({
-  selector: 'top-header',
+  selector: '[top-header]',
   templateUrl: './top-header.component.html',
   styleUrls: ['./top-header.component.css']
 })

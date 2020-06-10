@@ -3,7 +3,7 @@ import { ISkills } from '../../AllDataObjects/AllInterface';
 import { SkillDetails } from '../../AllDataObjects/DataFile';
 
 @Component({
-  selector: 'skills',
+  selector: '[skills]',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
