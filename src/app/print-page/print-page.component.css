@@ -23,9 +23,8 @@
 }
 
 .page-container {
-    width: 892.5px !important;
+    width: 893px !important;
     min-height: 1263px !important;
-    left: 13cm;
     background: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     position: relative;
