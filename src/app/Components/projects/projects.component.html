@@ -1,0 +1,17 @@
+<div class="col-md-12 text-title content-heading title-underline">Projects</div>
+<div class="row">
+    <div class="col-md-6 display-inline-for-project" *ngFor="let project of projects; index as i" style="padding-bottom:20pt;">
+        <div class="col-md-12" style="margin-left: 5pt; padding-top: 5pt;">
+            <div class="text-sub-title text-bold text-primary-color designation">{{project.title}} </div>
+            <div class="text-small text-primary-color text-ittalic no-overflow">
+                {{project.startDuration}} - {{project.endDuration}}
+            </div>
+            <div class="text-small text-primary-color text-ittalic no-overflow">
+                {{project.description}}
+            </div>
+            <div class="col-md-12 no-col-padding" style="padding-top: 5pt;">
+                <span bracket-list [listItems]="project.tasks" [isTwoRow]="true" [isVerticalTop]="true"  [title]="'Tasks'"></span>
+            </div>
+        </div>
+    </div>
+</div>

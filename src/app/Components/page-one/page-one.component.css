@@ -1,10 +1,10 @@
 .left-bar{
-    width: 240px;
+    width: 170pt;
     float: left;
 }
 
 .right-bar{
-    width: 652.5px;
-    padding-right: 25px;
+    width: 435pt;
+    /* padding-right: 25pt; */
     float: right;
 }

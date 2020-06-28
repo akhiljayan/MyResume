@@ -1,22 +1,24 @@
-  <div class="page-container page-one" #firstPage id="first-page">
-    <div class="top-watermark"></div>
-      <div top-header></div>
-      <div class="row">
-        <div page-one></div>
-      </div>
-    <div class="bottom-watermark"></div>
+
+<div class="page-container page-one" #firstPage id="first-page">
+  <div class="top-watermark"></div>
+  <div top-header></div>
+  <div class="row">
+    <div page-one></div>
   </div>
+  <div class="bottom-watermark"></div>
+</div>
+
+<div class="div-seperator"></div>
+
+<div class="page-container page-two" #secondPage id="second-page" style="padding-top: 33pt;">
+  <div class="top-watermark"></div>
+    <page-two></page-two>
+  <div class="bottom-watermark"></div>
+</div>
   
-  <div style="height: 20px"></div>
-  
-  <div class="page-container page-two" #secondPage id="second-page" style="padding-top: 33px;">
-    <div class="top-watermark"></div>
-      <page-two></page-two>
-    <div class="bottom-watermark"></div>
-  </div>
-  
-  <div class="col-md-12" style="text-align: center;">
-    <a class="btn btn-success" href="https://www.sejda.com/html-to-pdf?save-link" target="_blank">Save to PDF</a>
-    <button class="btn btn-primary" (click)="print()">Print</button>
-  </div>
-  <iframe name="print_frame" width="892.5px" height="0" frameborder="0" src="about:blank"></iframe>
+<div class="col-md-12" style="text-align: center;">
+  <!-- <a class="btn btn-success" href="https://www.sejda.com/html-to-pdf?save-link" target="_blank">Save to PDF</a> -->
+  <button class="btn btn-primary" (click)="print()">Print</button>
+</div>
+<iframe name="print_frame_1" width="210mm" height="0" frameborder="0" src="about:blank"></iframe>
+<iframe name="print_frame_2" width="210mm" height="0" frameborder="0" src="about:blank"></iframe>

@@ -1,0 +1,369 @@
+/* Main Css*/
+@page  
+{ 
+    size: A4;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin-right: 0mm; 
+    margin-top: 0mm;  
+    margin-left: 5mm;  
+} 
+
+
+@media print {
+    #second-page { page-break-after: always; }
+}
+
+.text-title-big{
+    font-size: 27pt;
+    line-height: 29pt;
+}
+
+.text-title{
+    font-size: 21pt;
+    line-height: 24pt;
+}
+
+.text-sub-title{
+    font-size: 16pt;
+    line-height: 18pt;
+}
+
+.text-normal{
+    font-size: 13pt;
+    line-height: 14pt;
+}
+
+.text-small{
+    font-size: 11pt;
+    line-height: 12pt;
+}
+
+.text-primary-color{
+    color: #154677;
+}
+
+.text-white{
+    color: #FFFFFF;
+}
+
+.background-primary{
+    background-color: #154677;
+}
+
+.background-white{
+    background-color: #FFFFFF;
+}
+
+.text-ittalic{
+    font-style: italic;
+}
+
+.nopadding{
+    padding: 0pt;
+}
+
+.no-col-padding{
+    padding-right: 0pt !important;
+    padding-left: 0pt !important;
+}
+
+.title-underline{
+    border-bottom-width: 2pt;
+    border-bottom-style: solid;
+    border-color: #154677;
+}
+
+.seperator{
+    width: 100%;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    border-color: #154677;
+    float: left;
+    height: 2pt;
+}
+
+.text-bold{
+    font-weight: 600;
+}
+
+.text-capital{
+    text-transform: uppercase;
+}
+
+.content-heading{
+    margin-bottom: 12pt;
+    padding-bottom: 1.5pt;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #154677;
+}
+
+.group-line{
+    top: 4.5pt;
+    position: absolute;
+    height: 100%;
+    width: 2pt;
+}
+
+.group-ball{
+    border-width: 4pt!important;
+    width: 15pt;
+    height: 15pt;
+    top: -1pt;
+    left: -6.75pt;
+    position: absolute;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #154677;
+}
+
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: right;
+}
+
+.no-overflow{
+    overflow: hidden;
+}
+
+
+
+.top-watermark{
+    background-image: url("/TopTriangle.svg");
+    height: 631.5pt!important;
+    top: 0!important;
+    background-position: left top !important;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute !important;
+    width: 100%;
+    background-size: cover !important;
+}
+
+.bottom-watermark{
+    background-image: url("/BottomTriangle.svg");
+    height: 631.5pt!important;
+    bottom: 0!important;
+    background-position: 100% 100% !important;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: absolute !important;
+    width: 100%;
+    background-size: cover !important;
+}
+
+.page-container {
+    /* width: 892.5pt !important;
+    min-height: 1263pt !important; */
+
+    width: 210mm !important;
+    min-height: 297mm !important;
+    padding-bottom: 30pt!important;
+    margin: 1cm auto; 
+    background: #FFFFFF;
+    box-shadow: 0 0 5pt rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.page-container.page-one{
+    padding-left: 10pt;
+}
+
+.page-container.page-two{
+    padding-top: 30pt;
+}
+
+
+
+.top-header{
+    display: table;
+    padding-top: 20pt;
+    width: 100%;
+    padding-right: 0pt;
+    padding-left: 0pt;
+    margin-bottom: 18pt;
+}
+
+.top-header .col-md-3{
+    overflow: auto;
+    display: table-cell;
+    vertical-align: middle;
+    width: 177pt !important;
+}
+
+.photo{
+    width:408pt!important; 
+    height:408pt!important; 
+    max-width: 145pt!important;
+    max-height: 150pt!important;
+    border-color: #d3d3d3;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    border-width: 1pt;
+    border-style: solid;
+    border-radius: 50%;
+    background: url("/photo.jpeg") no-repeat;
+    background-size: 100% 100%;
+    z-index: 10;
+}
+
+.blue-header-content{
+    padding: 13.5pt 0 16.5pt 0;
+    height: auto;
+    /* float: right;
+    position: relative; */
+    box-sizing: border-box;
+    display: table-cell;
+    width: 75%;
+}
+
+.header-seperator{
+    width: 140pt;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    background-color: #FFFFFF;
+    float: left;
+    height: 2pt;
+}
+
+
+.skill-block-container{
+    margin-bottom: 5pt;
+    margin-right: 6pt;
+    width: auto;
+    float: left;
+}
+
+.skill-block-text{
+    margin-bottom: 6pt;
+    border-radius: 4.5pt;
+    padding: 1pt 9pt;
+    float: left;
+    position: relative;
+    display: inline-table;
+    min-height: 30pt;
+}
+
+.skill{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.skills-parent{
+    overflow: auto;
+}
+
+.left-bar{
+    width: 26%;
+    float: left;
+}
+
+.right-bar{
+    width: 74%;
+    padding-right: 25pt;
+    float: right;
+}
+
+.contact-item{
+    margin-bottom: 12pt;
+    padding-top: 5pt;
+    min-height: 13.5pt;
+    display: flex;
+}
+
+.bracket-list{
+    display: inline-block;
+}
+
+.bracket-item-container{
+    display: table;
+}
+
+.bracket-list-icon{
+    font-size: 6pt;
+    display: table-cell;
+    width: 1%;
+    padding-top: 3pt;
+    vertical-align: top;
+}
+
+.bracket-list-item{
+    display: table-cell;
+    width: 99%;
+    padding-left: 5pt;
+}
+
+.bracket-item-1{
+    top: 1.5pt;
+    left: 1.5pt;
+    border-top-width: 1.5pt;
+    border-left-width: 1.5pt;
+    width: 9pt;
+    height: 80%;
+    position: absolute;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-color: #154677;
+}
+
+.bracket-item-2{
+    top: 1.5pt;
+    right: 1.5pt;
+    border-top-width: 1.5pt;
+    border-right-width: 1.5pt;
+    width: 9pt;
+    height: 80%;
+    position: absolute;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-color: #154677;
+}
+
+.bracket-item-3{
+    bottom: 1.5pt;
+    left: 1.5pt;
+    border-bottom-width: 1.5pt;
+    border-left-width: 1.5pt;
+    width: 9pt;
+    height: 80%;
+    position: absolute;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-color: #154677;
+}
+
+.bracket-item-4{
+    bottom: 1.5pt;
+    right: 1.5pt;
+    border-bottom-width: 1.5pt;
+    border-right-width: 1.5pt;
+    width: 9pt;
+    height: 80%;
+    position: absolute;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-color: #154677;
+}
+
+.bracket-content{
+    padding: 4pt 0px;
+}
+
+
+.work-experience-item{
+    padding-bottom:15pt;
+    padding-right:0px
+}
+
+.work-experience-period{
+    margin-top: 2pt;
+}
+
+.bracket-list-item{
+    padding-bottom: 3pt;
+}

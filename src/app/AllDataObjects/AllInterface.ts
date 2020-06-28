@@ -33,3 +33,16 @@ export interface IEducation{
     cgpa: string;
     subjects: Array<string>;
 }
+
+export interface IProjects{
+    title: string;
+    description: string;
+    startDuration: string;
+    endDuration: string;
+    tasks: Array<string>;
+    techStacks: Array<string>;
+}
+
+export interface IInvolvements{
+    involvements: Array<string>;
+}

@@ -1,4 +1,4 @@
-import { IResumeHeader, IContacts, ISkills, IWorkExperience, IEducation } from './AllInterface';
+import { IResumeHeader, IContacts, ISkills, IWorkExperience, IEducation, IProjects, IInvolvements } from './AllInterface';
 
 export class HeaderDetail{
     private nameData: string = "Akhil Jayan";
@@ -184,3 +184,92 @@ export class  EducationData{
     }
 }
 
+export class ProjectsData implements IProjects{
+    title: string;
+    description: string;
+    role: string;
+    startDuration: string;
+    endDuration: string;
+    tasks: string[];
+    techStacks: string[];
+
+    constructor(title: string, description: string, role: string, startDuration: string, endDuration: string, tasks:string[],  techStacks: string[]){
+        this.title = title;
+        this.description = description;
+        this.role = role;
+        this.startDuration = startDuration;
+        this.endDuration = endDuration;
+        this.tasks = tasks;
+        this.techStacks =  techStacks;
+    }
+    
+}
+
+
+export class Projects{
+    projects = [
+        {
+            title: "Enterprise Singapore Incentive Management System",
+            description: `Application that helps applicants to apply and process diffrent insentive schemes offered by Enterprice Singapore. 
+            The application also coveres an intranet portel which handles all the backend processes done by diffrent banking institutions and Enterprice Singapore.`,
+            role: 'Senior Developer',
+            tasks: ['User Story Estimation', 'Sprint Planning', 'Technical Designing', 'Full Stack Development', 'Unit testing, Bug fixing', 'Deployment'],
+            startDuration: "05/2019",
+            endDuration: "Ongoing",
+            techStacks: ['ASP.NET', 'HTML/CSS', 'SASS', 'Javascript', 'Outsystems', 'SQL']
+        },
+        {
+            title: "Ingot Person Centred Care System",
+            description: `Multi tenant application aims to de-medicalise care and increase collaboration, coordination and connectivity among care providers, professionals and family caregivers with the help of many features and modules`,
+            role: 'Full Stack Developer',
+            tasks: ['User story Preperation', 'User Story Estimation', 'Sprint Planning', 'Technical Designing', 'Full Stack Development', 'Unit testing, Bug fixing', 'Versioning', 'Deployment'],
+            startDuration: "07/2017",
+            endDuration: "05-2019",
+            techStacks: ['.NET', 'ASP Boilerplate', 'Angular', 'HTML/CSS', 'Javascript', 'MSSQL']
+        },
+        {
+            title: "RESTO Restaurant",
+            description: `POS system targeting new age Restaurants and Bars to manage the the end to end functionality of the Business`,
+            role: 'Full Stack Developer',
+            tasks: ['User story Preperation', 'User Story Estimation', 'Sprint Planning', 'Technical Designing', 'Full Stack Development', 'Unit testing, Bug fixing', 'Versioning'],
+            startDuration: "02/2019",
+            endDuration: "Ongoing",
+            techStacks: ['Java', 'Spring Boot', 'Angular', 'HTML/CSS', 'Javascript', 'MySql']
+        },
+        {
+            title: "Setu - The Money Pot",
+            description: `An Application Inspired by Splitwise to manage small group of users to manage chit finanace and to organise savings for certain events and programs`,
+            role: 'Full Stack Developer',
+            tasks: ['Requirement gathering', 'System design', 'Technical Designing', 'Full Stack Development', 'Unit testing, Bug fixing', 'Versioning'],
+            startDuration: "09/2019",
+            endDuration: "Ongoing", 
+            techStacks: ['ReactJS', 'HTML/CSS', 'Javascript']
+        }
+    ];
+
+    getProjects(): Array<ProjectsData>{
+        let data:Array<ProjectsData> = [];
+        this.projects.forEach((val : ProjectsData, key: any) => {
+            data.push(new ProjectsData(val.title, val.description, val.role, val.startDuration, val.endDuration, val.tasks, val.techStacks));
+        });
+        return data;
+    }
+}
+
+export class Involvements{
+    private invol : string []= [
+        'Frequent contributor to the open source community',
+        'Tweaks and bug fixes for some Libraries like Angular Date-Time Picker, Angular Chart JS, UI-Select etc',
+        'Developed Ext.Base plugins for Typo3 for the open source community under GNU license.',
+        'Involvement in development of multi tenant boilerplate framework similar to ASP Boilerplate usingSpring boot (JAVA) and Angular',
+        'Outsystem Certified Associate'
+    ];
+
+    public getData() : IInvolvements{
+        let invArr : Array<string> = this.invol;
+        let data:IInvolvements = {
+            involvements: invArr
+        }
+        return data;
+    }
+}

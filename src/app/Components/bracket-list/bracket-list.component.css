@@ -2,31 +2,34 @@
     display: inline-block;
 }
 
+.bracket-list-vertical-top{
+    vertical-align: top;
+}
+
 .bracket-item-container{
     display: table;
 }
 
 .bracket-list-icon{
-    font-size:8px;
-    font-size: 8px;
+    font-size: 6pt;
     display: table-cell;
     width: 1%;
-    padding-top: 5  px;
+    padding-top: 3pt;
     vertical-align: top;
 }
 
 .bracket-list-item{
     display: table-cell;
     width: 99%;
-    padding-left: 5px;
+    padding-left: 5pt;
 }
 
 .bracket-item-1{
-    top: 1.5px;
-    left: 1.5px;
-    border-top-width: 1.5px;
-    border-left-width: 1.5px;
-    width: 9px;
+    top: 1.5pt;
+    left: 1.5pt;
+    border-top-width: 1.5pt;
+    border-left-width: 1.5pt;
+    width: 9pt;
     height: 80%;
     position: absolute;
     border-top-style: solid;
@@ -35,11 +38,11 @@
 }
 
 .bracket-item-2{
-    top: 1.5px;
-    right: 1.5px;
-    border-top-width: 1.5px;
-    border-right-width: 1.5px;
-    width: 9px;
+    top: 1.5pt;
+    right: 1.5pt;
+    border-top-width: 1.5pt;
+    border-right-width: 1.5pt;
+    width: 9pt;
     height: 80%;
     position: absolute;
     border-top-style: solid;
@@ -48,11 +51,11 @@
 }
 
 .bracket-item-3{
-    bottom: 1.5px;
-    left: 1.5px;
-    border-bottom-width: 1.5px;
-    border-left-width: 1.5px;
-    width: 9px;
+    bottom: 1.5pt;
+    left: 1.5pt;
+    border-bottom-width: 1.5pt;
+    border-left-width: 1.5pt;
+    width: 9pt;
     height: 80%;
     position: absolute;
     border-bottom-style: solid;
@@ -61,14 +64,18 @@
 }
 
 .bracket-item-4{
-    bottom: 1.5px;
-    right: 1.5px;
-    border-bottom-width: 1.5px;
-    border-right-width: 1.5px;
-    width: 9px;
+    bottom: 1.5pt;
+    right: 1.5pt;
+    border-bottom-width: 1.5pt;
+    border-right-width: 1.5pt;
+    width: 9pt;
     height: 80%;
     position: absolute;
     border-bottom-style: solid;
     border-right-style: solid;
     border-color: #154677;
+}
+
+.bracket-content{
+    padding: 4px 0px;
 }

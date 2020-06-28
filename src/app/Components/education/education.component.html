@@ -1,19 +1,21 @@
 <div class="col-md-12 text-title content-heading title-underline">Education</div>
 <div class="col-md-12">
-    <div class="col-md-12" *ngFor="let education of educations; index as i " style="padding-bottom:20px;">
+    <div class="col-md-12" *ngFor="let education of educations; index as i" style="padding-bottom:20pt;">
         <div class="group-line text-white" [ngClass]="{'background-primary': (i+1) < this.educations.length, 'background-white' : (i+1) >= this.educations.length}">
             <div class="group-ball background-white"></div>
         </div>
-        <div class="col-md-12 no-col-padding" style="margin-left: 20px;">
+        <div class="col-md-12" style="margin-left: 5pt; padding-top: 5pt;">
             <div class="text-sub-title text-bold text-primary-color designation">{{education.course}} </div>
             <div class="text-sub-title text-bold company">{{education.university}}</div>
             <div class="text-small text-primary-color text-ittalic no-overflow">
                 <span class="pull-left">{{education.startDate}} - {{education.endDate}}</span>
                 <span class="pull-right">{{education.cgpa}}</span>
             </div>
-            <div class="col-md-12 no-col-padding" style="padding-top: 5px;">
-                <span bracket-list [listItems]="education.subjects" [isTwoRow]="true"></span>
+            <div class="col-md-12 no-col-padding" style="padding-top: 5pt;">
+                <span bracket-list [listItems]="education.subjects" [isTwoRow]="true" [title]="'Main Subjects'"></span>
             </div>
         </div>
     </div>
 </div>
+
+

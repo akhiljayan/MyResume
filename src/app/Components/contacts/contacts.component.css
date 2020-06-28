@@ -1,6 +1,6 @@
 .contact-item{
-    margin-bottom: 12px;
-    padding-top: 18px;
-    min-height: 13.5px;
+    margin-bottom: 12pt;
+    padding-top: 5pt;
+    min-height: 13.5pt;
     display: flex;
 }

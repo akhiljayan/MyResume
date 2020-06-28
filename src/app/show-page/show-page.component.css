@@ -1,6 +1,6 @@
 .top-watermark{
     background-image: url("src/assets/TopTriangle.svg");
-    height: 631.5px!important;
+    height: 631.5pt!important;
     top: 0!important;
     background-position: left top !important;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 .bottom-watermark{
     background-image: url("src/assets/BottomTriangle.svg");
-    height: 631.5px!important;
+    height: 631.5pt!important;
     bottom: 0!important;
     background-position: 100% 100% !important;
     background-repeat: no-repeat;
@@ -23,20 +23,29 @@
 }
 
 .page-container {
-    width: 892.5px !important;
-    min-height: 1263px !important;
-    padding-bottom: 30px!important;
-     margin: 1cm auto; 
+    /* width: 892.5pt !important;
+    min-height: 1263pt !important; */
+
+    width: 210mm !important;
+    min-height: 297mm !important;
+    padding-bottom: 30pt!important;
+    margin: 1cm auto; 
     background: #FFFFFF;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5pt rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
 .page-container.page-one{
-    padding-left: 22px;
+    padding-left: 10pt;
 }
 
 .page-container.page-two{
-    padding-top: 30px;
+    padding-top: 30pt;
 }
 
+
+
+
+.div-seperator{
+    height: 20pt;
+}

@@ -12,6 +12,8 @@ import { SkillsComponent } from './Components/skills/skills.component';
 import { WorkExperienceComponent } from './Components/work-experience/work-experience.component';
 import { PageTwoComponent } from './Components/page-two/page-two.component';
 import { EducationComponent } from './Components/education/education.component';
+import { ProjectsComponent } from './Components/projects/projects.component';
+import { InvolvementsComponent } from './Components/involvements/involvements.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { EducationComponent } from './Components/education/education.component';
     PageTwoComponent,
     EducationComponent,
     PrintPageComponent,
-    ShowPageComponent
+    ShowPageComponent,
+    ProjectsComponent,
+    InvolvementsComponent
   ],
   imports: [
     BrowserModule,

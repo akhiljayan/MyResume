@@ -1,8 +1,8 @@
-<div class="text-small text-primary-color text-ittalic">Achievements/Tasks</div>
-<div class="col-md-12 no-col-padding">
-    <div class="bracket-list" [ngClass]="{'col-md-6': isTwoRow, 'col-md-12' : !isTwoRow}" *ngFor="let textItem of listItems">
+<div class="text-small text-primary-color text-ittalic">{{title}}</div>
+<div class="col-md-12 no-col-padding bracket-content">
+    <div class="bracket-list" [ngClass]="{'col-md-6': isTwoRow, 'col-md-12' : !isTwoRow, 'bracket-list-vertical-top' : isVerticalTop}" *ngFor="let textItem of listItems">
         <div class="bracket-item-container">
-            <i class="fas fa-minus bracket-list-icon"></i>
+            <i class="far fa-circle bracket-list-icon"></i>
             <span class="bracket-list-item text-normal">{{textItem}}</span>
         </div>
     </div>
