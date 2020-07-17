@@ -37,8 +37,29 @@ export class ContactDetails{
 }
 
 export class SkillDetails{
-    private skills : string = `Java,Spring-boot,C#,ASP.NET,Javascript,Angular,React,JS,PHP,Symfony,
-    HTML/CSS,SQL,Hibernate,Entity,Framework,RDBMS,GIT,REST,API,React JS,TDD,Azure Service,Agile Methodology`;
+    private skills : string = `
+    Java,
+    Spring-boot,
+    C#,
+    ASP.NET,
+    Javascript,
+    Angular,
+    React JS,
+    PHP,
+    Symfony,
+    HTML/CSS,
+    SCSS,
+    SQL,
+    Hibernate,
+    Entity,
+    Framework,
+    RDBMS,
+    REST API,
+    GIT,
+    TDD,
+    AWS,
+    Azure Service,
+    Agile Methodology`;
 
     public getData() : ISkills{
         let skillarr : Array<string> = this.skills.split(",");
@@ -229,7 +250,7 @@ export class Projects{
         },
         {
             title: "RESTO Restaurant",
-            description: `POS system targeting new age Restaurants and Bars to manage the the end to end functionality of the Business`,
+            description: `POS system targeting new age Restaurants and Bars to manage the end to end functionality of the Business`,
             role: 'Full Stack Developer',
             tasks: ['User story Preperation', 'User Story Estimation', 'Sprint Planning', 'Technical Designing', 'Full Stack Development', 'Unit testing, Bug fixing', 'Versioning'],
             startDuration: "02/2019",
