@@ -3,8 +3,8 @@ import { IResumeHeader, IContacts, ISkills, IWorkExperience, IEducation, IProjec
 export class HeaderDetail{
     private nameData: string = "Akhil Jayan";
     private titleData: string = "Full Stack Developer";
-    private descriptionData : string = `Software developer with 3 years of industrial experience. 
-    Proficient in building and maintaining enterprise application using technologies like Java, C#, PHP, JavaScript and related frameworks. 
+    private descriptionData : string = `Full Stack Developer with 4.5 years of industrial experience. 
+    Proficient in building and maintaining enterprise application using multiple technologies like Java, C#, JavaScript etc. 
     Has a Post-Graduate Diploma in System Analysis from National University of Singapore and Bachelors of technology from University of Calicut.`;
 
     public getData(): IResumeHeader{
@@ -50,15 +50,12 @@ export class SkillDetails{
     HTML/CSS,
     SCSS,
     SQL,
-    Hibernate,
-    Entity,
-    Framework,
+    ORM Frameworks,
     RDBMS,
     REST API,
     GIT,
     TDD,
     AWS,
-    Azure Service,
     Agile Methodology`;
 
     public getData() : ISkills{
