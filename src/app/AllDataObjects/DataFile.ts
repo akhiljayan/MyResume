@@ -38,23 +38,25 @@ export class ContactDetails{
 
 export class SkillDetails{
     private skills : string = `
-    Java,
-    Spring-boot,
     C#,
-    ASP.NET,
+    .NET/Core,
+    Java,
+    Spring-boot,    
     Javascript,
     Angular,
     React JS,
-    PHP,
-    Symfony,
     HTML/CSS,
     SCSS,
     SQL,
-    ORM Frameworks,
+    MSSQL,
+    Entity Framework,
+    Hybernate,
     RDBMS,
+    NoSQL databases,
     REST API,
-    GIT,
+    Microservices,
     TDD,
+    GIT,
     AWS,
     Agile Methodology`;
 
