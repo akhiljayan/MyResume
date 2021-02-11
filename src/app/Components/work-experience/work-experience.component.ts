@@ -9,7 +9,7 @@ import { WorkExperience, WorkExperienceData } from '../../AllDataObjects/DataFil
 export class WorkExperienceComponent implements OnInit {
   workExps: Array<WorkExperience>;
   constructor() {
-    this.workExps = new WorkExperienceData().getWorkExperienceData();
+    this.workExps = new WorkExperienceData().getWorkExperienceData().filter(a=>a.isActive);
   }
 
   ngOnInit(): void {

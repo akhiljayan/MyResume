@@ -39,7 +39,8 @@ export class ContactDetails{
 export class SkillDetails{
     private skills : string = `
     C#,
-    .NET/Core,
+    .NET,
+    .NET Core, 
     Java,
     Spring-boot,    
     Javascript,
@@ -54,10 +55,10 @@ export class SkillDetails{
     RDBMS,
     NoSQL databases,
     REST API,
-    Microservices,
     TDD,
     GIT,
     AWS,
+    Microservices,
     Agile Methodology`;
 
     public getData() : ISkills{
@@ -75,13 +76,15 @@ export class WorkExperience implements IWorkExperience{
     company: string;
     startDate: string;
     endDate: string;
+    isActive: boolean;
     tasks: string[];
 
-    constructor(designation: string, company: string, startDate: string, endDate: string, tasks: string[]){
+    constructor(designation: string, company: string, startDate: string, endDate: string, isActive: boolean, tasks: string[]){
         this.designation = designation;
         this.company = company;
         this.startDate = startDate;
         this.endDate = endDate;
+        this.isActive = isActive;
         this.tasks = tasks;
     }
 }
@@ -89,10 +92,24 @@ export class WorkExperience implements IWorkExperience{
 export class  WorkExperienceData{
     workExperience: any =[
         {
+            designation: "Senior Software Engineer",
+            company: "CrimsonLogic Pte Ltd, Singapore",
+            startDate: "01/2021",
+            endDate: "Present",
+            isActive: true,
+            tasks: [
+                "Provide maintenance support for Trade facilitation platform",
+                "Analyze requests for enhancements and perform stages of the SDLC for implementation",
+                "Design and document system design, architecture and propose appropriate technologies and tools required to implement systems",
+                "Deploy systems to SIT and production and provide post-implementation support"
+            ],
+        },
+        {
             designation: "Senior Associate",
             company: "KPMG Singapore",
             startDate: "09/2019",
-            endDate: "Present",
+            endDate: "12/2020",
+            isActive: true,
             tasks: [
                 "Involvement in development of Incentive Management Systems for Enterprise Singapore",
                 "Develop Common UI components to be used through out the application by other Developers",
@@ -102,9 +119,10 @@ export class  WorkExperienceData{
         }, 
         {
             designation: "Full Stack Developer",
-            company: "PulseSync Pte. Ltd.",
+            company: "PulseSync Pte Ltd, Singapore",
             startDate: "03/2017",
             endDate: "09/2019",
+            isActive: true,
             tasks: [
                 "Collaborate with the functional team to analyze collected business requirements",
                 "Participate in the discussion to translate requirements into solutions and ensure that identiﬁed solutions meet clients needs and expectations",
@@ -116,9 +134,10 @@ export class  WorkExperienceData{
         }, 
         {
             designation: "Software Engineer",
-            company: "PIT Solutions Pvt. Ltd.",
+            company: "PIT Solutions Pvt Ltd, India",
             startDate: "03/2016",
             endDate: "07/2016",
+            isActive: false,
             tasks: [
                 "Communicate with the users on business requirements and provide technical solutions",
                 "Develop and deploy enterprise application as per the collected requirements and provide support for the Released products",
@@ -127,9 +146,10 @@ export class  WorkExperienceData{
         }, 
         {
             designation: "Software Programmer",
-            company: "National Informatics Centre",
+            company: "National Informatics Centre, India",
             startDate: "11/2014",
             endDate: "03/2016",
+            isActive: true,
             tasks: [
                 "Developed and released 3 major State Govt. projects for Finance department and Election Commission",
                 "Involvement in project designing which includes database design and module architecture",
@@ -142,7 +162,7 @@ export class  WorkExperienceData{
     getWorkExperienceData() : Array<WorkExperience>{
         let data: Array<WorkExperience> = [];
         this.workExperience.forEach((val : WorkExperience, key: any) => {
-            data.push(new WorkExperience(val.designation, val.company, val.startDate, val.endDate, val.tasks));
+            data.push(new WorkExperience(val.designation, val.company, val.startDate, val.endDate, val.isActive, val.tasks));
         });
         return data;
     }
