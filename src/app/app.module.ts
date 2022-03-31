@@ -14,6 +14,7 @@ import { PageTwoComponent } from './Components/page-two/page-two.component';
 import { EducationComponent } from './Components/education/education.component';
 import { ProjectsComponent } from './Components/projects/projects.component';
 import { InvolvementsComponent } from './Components/involvements/involvements.component';
+import { SingleLineBracketListComponent } from './single-line-bracket-list/single-line-bracket-list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { InvolvementsComponent } from './Components/involvements/involvements.co
     PrintPageComponent,
     ShowPageComponent,
     ProjectsComponent,
-    InvolvementsComponent
+    InvolvementsComponent,
+    SingleLineBracketListComponent
   ],
   imports: [
     BrowserModule,

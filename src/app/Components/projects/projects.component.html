@@ -6,11 +6,14 @@
             <div class="text-small text-primary-color text-ittalic no-overflow">
                 {{project.startDuration}} - {{project.endDuration}}
             </div>
-            <div class="text-small text-primary-color text-ittalic no-overflow">
+            <div class="text-small text-primary-color text-ittalic no-overflow project-description">
                 {{project.description}}
             </div>
             <div class="col-md-12 no-col-padding" style="padding-top: 5pt;">
                 <span bracket-list [listItems]="project.tasks" [isTwoRow]="true" [isVerticalTop]="true"  [title]="'Tasks'"></span>
+            </div>
+            <div class="col-md-12 no-col-padding" style="padding-top: 5pt;">
+                <span single-line-bracket-list [listItems]="project.techStacks"  [title]="'Tech Stacks'"></span>
             </div>
         </div>
     </div>

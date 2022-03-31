@@ -1,0 +1,6 @@
+<div class="col-md-12 no-col-padding bracket-content" style="line-height:0px">
+    <span class="text-small text-primary-color">{{title}} : </span>
+    <span class="bracket-list text-small text-primary-color text-bold" *ngFor="let textItem of listItems; let lastItem = last;">
+        {{textItem}}<span *ngIf="!lastItem">,&nbsp;</span>
+    </span>
+</div>

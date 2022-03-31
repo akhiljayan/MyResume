@@ -1,0 +1,13 @@
+.bracket-content {
+  padding: 4px 0px;
+}
+
+.bracket-list {
+  display: inline-block;
+}
+
+.bracket-list-item {
+  display: table-cell;
+  width: 99%;
+  padding-left: 5pt;
+}
